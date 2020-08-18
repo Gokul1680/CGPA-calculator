@@ -13,10 +13,43 @@
         <h3>CGPA Calculator</h3>
     </header>
 
-    <div>
-        <p>hi</p>
+    <div class="dept" >
+        </p>
+        <select id="dept">
+            
+            <option value="ECE">ECE</option>
+            
+          </select>
     </div>
-
+    <div class="sem" >
+    
+        <select id="sem">
+            
+            <option value="4">4 th</option>
+            <option value="6">6 th</option>
+            
+          </select>
+    </div>
+    <div class="sem4" id="sem4">
+        <h3>Enter the Grade You've got in respective Papers</h3>
+        <div class="papers" id="papers">
+           <input type="text" placeholder="Grade in PRP" id="PRP">
+            <input type="text" placeholder="Grade in SS" id="SS">
+            <input type="text" placeholder="Grade in TLW" id="TLW">
+            <input type="text" placeholder="Grade in MPMC" id="MPMC">
+            <input type="text" placeholder="Grade in EC II" id="EC2">
+            <input type="text" placeholder="Grade in PE" id="PE">
+            <input type="text" placeholder="Grade in ECS Lab" id="ECS">
+            <input type="text" placeholder="Grade in MPMC Lab" id="MPMClab">
+       
+        </div>    
+    </div>
+    <div class="check" id="check">
+        <button onclick="myfunc()">Get CGPA</button>
+    </div>
+    <div class="result" id="result">
+        <p>Your CGPA is <span id="cgpa"></span></p>
+    </div>
 
 
     <footer>
